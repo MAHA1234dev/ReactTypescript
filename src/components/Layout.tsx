@@ -5,26 +5,30 @@ const li = {
     marginLeft: "30px"
 }
 
+const link = {
+    textDecoration: "none"
+}
+
 function Layout() {
     return (
         <>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", background: "rgb(21 163 227 / 76%)", padding: "15px" }}>
                 <span>Portfolio</span>
                 <nav>
-                    <ul style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                        <li style={li}>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li style={li}>
-                            <Link to="/about">About</Link>
-                        </li>
-                        <li style={li}>
-                            <Link to="/contact">Contact</Link>
-                        </li>
-                        <li style={li}>
-                            <Link to="/Resume">Resume</Link>
-                        </li>
-                    </ul>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                        <span style={li}>
+                            <Link style={link} to="/">Home</Link>
+                        </span>
+                        <span style={li}>
+                            <Link style={link} to="/about">About</Link>
+                        </span>
+                        <span style={li}>
+                            <Link style={link} to="/contact">Contact</Link>
+                        </span>
+                        <span style={li}>
+                            <Link style={link} to="/Resume">Resume</Link>
+                        </span>
+                    </div>
                 </nav>
             </div>
             <Outlet />
