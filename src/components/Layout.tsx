@@ -6,7 +6,8 @@ const li = {
 }
 
 const link = {
-    textDecoration: "none"
+    textDecoration: "none",
+
 }
 
 function Layout() {
